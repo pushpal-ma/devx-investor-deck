@@ -137,7 +137,7 @@ const content = [
 `<div style="display:flex;flex-direction:column;justify-content:center;min-height:500px">
   <div style="margin-bottom:20px"><span style="font-size:10px;font-weight:600;letter-spacing:0.2em;color:var(--cr)">CONFIDENTIAL · INVESTOR PRESENTATION · 2026</span></div>
   <div style="font-size:52px;font-weight:700;line-height:1.05;margin-bottom:16px;letter-spacing:-0.03em">The <span class="cr">AI-native</span> execution<br>consulting company<br>built for the next decade.</div>
-  <p class="sub" style="text-align:center;max-width:560px;margin-left:auto;margin-right:auto">Rebuilding execution consulting from first principles — fewer engineers, more orchestrators, AI in every layer. Profitable. 3× YoY.</p>
+  <p class="sub" style="text-align:left">Rebuilding execution consulting from first principles — fewer engineers, more orchestrators, AI in every layer. Profitable. 3× YoY.</p>
   <div class="tags"><span class="tag">AWS Advanced Consulting Partner</span><span class="tag">Medusa Partner</span><span class="tag">Profitable from Day 1</span></div>
   <div class="grid4">
     <div class="stat"><div class="stat-label">FY25 REVENUE</div><div class="stat-val" style="color:var(--muted)">₹5.61Cr</div><div class="stat-sub">Base year actuals</div></div>
@@ -233,7 +233,7 @@ const content = [
     <div class="card2"><div style="font-weight:700;font-size:12px;color:var(--cr);margin-bottom:10px;letter-spacing:0.08em">WHY RPE IS THE RIGHT METRIC</div>${chk(["Captures AI leverage — more adoption = higher RPE","Exposes org bloat before it hits the P&L","Aligns incentives: grow revenue, not headcount","Metric top-quartile consulting firms benchmark against"])}</div>
     <div class="card2">
       <div style="font-weight:700;font-size:13px;margin-bottom:14px">RPE TRAJECTORY</div>
-      ${[["FY26 actual","₹21.1L","80 avg. employees · profitable baseline",false],["FY27 target","₹42.3L","150 people · GTM + AI tooling",true],["FY28 north star","₹2.3Cr","$250K per employee — 10× industry avg.",true]].map(([y,r,n,hi])=>`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--faint)"><div><div style="font-weight:700;font-size:13px;color:${hi?"var(--cr)":"#fff"}">${y}</div><div style="color:var(--muted);font-size:11px;margin-top:2px">${n}</div></div><div style="font-size:20px;font-weight:700;color:${hi?"var(--cr)":"#fff"}">${r}</div></div>`).join("")}
+      ${[["FY26 actual","₹21.1L","80 emp. · ₹16.86Cr revenue",false],["FY27 target","₹42.3L","150 emp. · ₹63.5Cr revenue",true],["FY28 target","₹92L","200 emp. · ₹184Cr revenue (~$100K)",true],["FY29 north star ⭐","₹2.3Cr","200 emp. · ₹460Cr revenue ($250K)",true]].map(([y,r,n,hi])=>`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--faint)"><div><div style="font-weight:700;font-size:13px;color:${hi?"var(--cr)":"#fff"}">${y}</div><div style="color:var(--muted);font-size:11px;margin-top:2px">${n}</div></div><div style="font-size:20px;font-weight:700;color:${hi?"var(--cr)":"#fff"}">${r}</div></div>`).join("")}
     </div>
   </div>
 </div>`,
