@@ -144,9 +144,8 @@ const content = [
     <div class="stat"><div class="stat-label">FY25 REVENUE</div><div class="stat-val" style="color:var(--muted)">₹5.61Cr</div><div class="stat-sub">Base year actuals</div></div>
     <div class="stat"><div class="stat-label">FY26 REVENUE</div><div class="stat-val">₹16.86Cr</div><div class="stat-sub">3× YoY growth</div></div>
     <div class="stat"><div class="stat-label">FY26 PBT</div><div class="stat-val" style="color:var(--cr)">₹6.24Cr</div><div class="stat-sub">37% net margin</div></div>
-    <div class="stat"><div class="stat-label">FY27 TARGET</div><div class="stat-val" style="color:var(--cr)">₹95Cr</div><div class="stat-sub">ARR → ₹144Cr exit</div></div>
+    <div class="stat"><div class="stat-label">FY27 TARGET</div><div class="stat-val" style="color:var(--cr)">₹95.4Cr</div><div class="stat-sub">ARR → ₹144Cr exit</div></div>
   </div>
-  <div style="margin-top:12px;color:var(--dim);font-size:10px;letter-spacing:0.05em">* Projections at ₹92/USD spot rate, Apr 2026</div>
 </div>`,
 
 // 1 PROBLEM
@@ -197,7 +196,7 @@ const content = [
   <div class="org-container" style="border:1px solid var(--crb)">
     <div class="org-title cr">💎 devx AI labs (Diamond-Shaped)</div>
     ${[["Leadership",12,false],["Consulting + Sol.",46,false],["Outcome Mgrs / CSMs",96,true],["Consulting + Sol.",46,false],["AI Engineers",18,false]].map(([l,p,hi])=>`<div class="bar-row"><div class="bar-label" style="color:${hi?"var(--cr)":"var(--muted)"};font-weight:${hi?700:400}">${l}</div><div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${hi?"var(--cr)":"#220a0e"};border:${hi?"1px solid var(--cr)":"1px solid #3a0a10"}"></div></div><div class="bar-pct" style="color:${hi?"var(--cr)":"var(--dim)"}">${p}%</div></div>`).join("")}
-    <div style="margin-top:14px;text-align:center;font-size:11px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px">RPE target <strong style="color:var(--cr)">₹42L (FY27)</strong> · Gross margin <strong style="color:var(--cr)">52%+</strong></div>
+    <div style="margin-top:14px;text-align:center;font-size:11px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px">RPE target <strong style="color:var(--cr)">₹42.4L (FY27)</strong> · Gross margin <strong style="color:var(--cr)">52%+</strong></div>
   </div>
 </div>
 <div class="grid3">
@@ -227,14 +226,14 @@ const content = [
 <div class="grid2" style="margin-bottom:20px">
   <div class="card" style="padding:22px">
     <div style="font-weight:700;font-size:11px;color:var(--dim);letter-spacing:0.1em;margin-bottom:16px">RPE COMPARISON (₹L / EMPLOYEE / YEAR)</div>
-    ${[["Large Indian IT (TCS, Wipro)","₹15L",7,false],["Mid-tier IT services","₹22L",10,false],["devx AI labs FY26 (80 emp.)","₹21.1L",9,true],["devx AI labs FY27 (225 emp.)","₹42.2L",18,true],["devx AI labs FY29 north star ($250K)","₹2.3Cr",100,true]].map(([l,r,p,hi])=>`<div class="rpe-row"><div class="rpe-header"><span style="color:${hi?"#fff":"var(--dim)"};font-size:12px;font-weight:${hi?700:400}">${l}</span><span style="color:${hi?"var(--cr)":"var(--dim)"};font-weight:700;font-size:13px">${r}</span></div><div class="rpe-track"><div class="rpe-fill" style="width:${p}%;background:${hi?"var(--cr)":"var(--border)"}"></div></div></div>`).join("")}
-    <div style="margin-top:10px;font-size:11px;color:var(--dim)">FY29 north star: $250K RPE (₹2.3Cr) — 10× industry average. AI leverage is the only way to get there.</div>
+    ${[["Large Indian IT (TCS, Wipro)","₹15L",16,false],["Mid-tier IT services","₹22L",24,false],["devx AI labs FY26 (80 emp.)","₹21.1L",23,true],["devx AI labs FY27 (225 emp.)","₹42.4L",46,true],["devx AI labs FY28 (350 emp.)","₹75L",82,true],["devx AI labs FY29 north star","₹92L",100,true]].map(([l,r,p,hi])=>`<div class="rpe-row"><div class="rpe-header"><span style="color:${hi?"#fff":"var(--dim)"};font-size:12px;font-weight:${hi?700:400}">${l}</span><span style="color:${hi?"var(--cr)":"var(--dim)"};font-weight:700;font-size:13px">${r}</span></div><div class="rpe-track"><div class="rpe-fill" style="width:${p}%;background:${hi?"var(--cr)":"var(--border)"}"></div></div></div>`).join("")}
+    <div style="margin-top:10px;font-size:11px;color:var(--dim)">FY29 north star: ₹92L RPE — 4× mid-tier IT services. AI leverage is the only way to get there.</div>
   </div>
   <div style="display:flex;flex-direction:column;gap:12px">
     <div class="card2"><div style="font-weight:700;font-size:12px;color:var(--cr);margin-bottom:10px;letter-spacing:0.08em">WHY RPE IS THE RIGHT METRIC</div>${chk(["Captures AI leverage — more adoption = higher RPE","Exposes org bloat before it hits the P&L","Aligns incentives: grow revenue, not headcount","Metric top-quartile consulting firms benchmark against"])}</div>
     <div class="card2">
       <div style="font-weight:700;font-size:13px;margin-bottom:14px">RPE TRAJECTORY</div>
-      ${[["FY26 actual","₹21.1L","80 emp. · ₹16.86Cr revenue",false],["FY27 target","₹42.2L","225 emp. · ₹95Cr revenue",true],["FY28 target","₹92L","200 emp. · ₹184Cr revenue (~$100K)",true],["FY29 north star ⭐","₹2.3Cr","200 emp. · ₹460Cr revenue ($250K)",true]].map(([y,r,n,hi])=>`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--faint)"><div><div style="font-weight:700;font-size:13px;color:${hi?"var(--cr)":"#fff"}">${y}</div><div style="color:var(--muted);font-size:11px;margin-top:2px">${n}</div></div><div style="font-size:20px;font-weight:700;color:${hi?"var(--cr)":"#fff"}">${r}</div></div>`).join("")}
+      ${[["FY26 actual","₹21.1L","80 emp. · ₹16.86Cr revenue",false],["FY27 target","₹42.4L","225 emp. · ₹95.4Cr revenue",true],["FY28 target","₹75L","350 emp. · ₹262.5Cr revenue",true],["FY29 north star ⭐","₹92L","450 emp. · ₹414Cr revenue",true]].map(([y,r,n,hi])=>`<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--faint)"><div><div style="font-weight:700;font-size:13px;color:${hi?"var(--cr)":"#fff"}">${y}</div><div style="color:var(--muted);font-size:11px;margin-top:2px">${n}</div></div><div style="font-size:20px;font-weight:700;color:${hi?"var(--cr)":"#fff"}">${r}</div></div>`).join("")}
     </div>
   </div>
 </div>`,
@@ -259,18 +258,18 @@ const content = [
 
 // 8 FINANCIALS
 `<span class="sl">FINANCIALS</span>
-<h2>Path to ₹460Cr.<br><span class="cr">Built on recurring revenue.</span></h2>
-<p class="sub">FY27 is the inflection year. GTM in Western markets, ₹144Cr ARR by exit rate, ₹34Cr PBT. All projections at ₹92/USD.</p>
+<h2>Path to ₹414Cr.<br><span class="cr">Built on recurring revenue.</span></h2>
+<p class="sub">FY27 is the inflection year. GTM in Western markets, ₹144Cr ARR by exit rate, ₹34Cr PBT. FY28–29 are the leverage plays.</p>
 <div class="card" style="margin-bottom:14px;padding:20px">
   <div class="section-title">REVENUE (₹CR) — ACTUALS & PROJECTIONS</div>
   <canvas id="revenueChart"></canvas>
 </div>
 <div class="grid5" style="margin-bottom:14px">
-  ${[["FY25","₹5.61Cr","Actual","~42%","—",false],["FY26","₹16.86Cr","Actual","52%","₹6.24Cr",false],["FY27E","₹95Cr","Target","52%+","₹34Cr",true],["FY28E","₹184Cr","Target","55%+","—",true],["FY29E","₹460Cr","Target","58%+","—",true]].map(([y,r,n,g,p,hi])=>`<div class="proj-card ${hi?"hi":""}"><div class="proj-year">${y}</div><div class="proj-rev">${r}</div><div class="proj-note">${n}</div><div class="proj-gm">GM: ${g}</div>${p!=="—"?`<div class="proj-pbt">PBT: ${p}</div>`:""}</div>`).join("")}
+  ${[["FY25","₹5.61Cr","Actual","~42%","—",false],["FY26","₹16.86Cr","Actual","52%","₹6.24Cr",false],["FY27E","₹95.4Cr","Target","52%+","₹34Cr",true],["FY28E","₹262.5Cr","Target","55%+","—",true],["FY29E","₹414Cr","Target","58%+","—",true]].map(([y,r,n,g,p,hi])=>`<div class="proj-card ${hi?"hi":""}"><div class="proj-year">${y}</div><div class="proj-rev">${r}</div><div class="proj-note">${n}</div><div class="proj-gm">GM: ${g}</div>${p!=="—"?`<div class="proj-pbt">PBT: ${p}</div>`:""}</div>`).join("")}
 </div>
 <div class="highlight-box">
   <div class="grid4">
-    ${[["FY27 ARR EXIT RATE","₹144Cr"],["FY27 PBT TARGET","₹34Cr"],["REVENUE CAGR (FY26→FY29)","~201%"],["GROSS MARGIN TRAJECTORY","52% → 58%+"]].map(([l,v])=>`<div><div style="color:var(--dim);font-size:10px;font-weight:600;letter-spacing:0.1em;margin-bottom:4px">${l}</div><div style="font-size:18px;font-weight:700;color:var(--cr)">${v}</div></div>`).join("")}
+    ${[["FY27 ARR EXIT RATE","₹144Cr"],["FY27 PBT TARGET","₹34Cr"],["REVENUE CAGR (FY26→FY29)","~191%"],["GROSS MARGIN TRAJECTORY","52% → 58%+"]].map(([l,v])=>`<div><div style="color:var(--dim);font-size:10px;font-weight:600;letter-spacing:0.1em;margin-bottom:4px">${l}</div><div style="font-size:18px;font-weight:700;color:var(--cr)">${v}</div></div>`).join("")}
   </div>
 </div>`,
 
@@ -334,7 +333,7 @@ function render() {
   if(cur===8) setTimeout(()=>{
     const ctx = document.getElementById("revenueChart");
     if(!ctx) return;
-    new Chart(ctx,{type:"bar",data:{labels:["FY25","FY26","FY27E","FY28E","FY29E"],datasets:[{data:[5.61,16.86,95,184,460],backgroundColor:["#2a2a2a","#555","#DC143C","#aa1030","#880c28"],borderRadius:3}]},options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`₹${c.raw}Cr`}}},scales:{x:{grid:{display:false},ticks:{color:"#888",font:{family:"Space Grotesk"}}},y:{grid:{color:"#1e1e1e"},ticks:{color:"#888",font:{family:"Space Grotesk"},callback:v=>`₹${v}Cr`}}}}});
+    new Chart(ctx,{type:"bar",data:{labels:["FY25","FY26","FY27E","FY28E","FY29E"],datasets:[{data:[5.61,16.86,95.4,262.5,414],backgroundColor:["#2a2a2a","#555","#DC143C","#aa1030","#880c28"],borderRadius:3}]},options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`₹${c.raw}Cr`}}},scales:{x:{grid:{display:false},ticks:{color:"#888",font:{family:"Space Grotesk"}}},y:{grid:{color:"#1e1e1e"},ticks:{color:"#888",font:{family:"Space Grotesk"},callback:v=>`₹${v}Cr`}}}}});
   },100);
 }
 
