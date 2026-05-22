@@ -106,6 +106,33 @@ canvas{max-height:180px}
 </head>
 <body>
 
+<div id="auth-gate" style="position:fixed;inset:0;background:#000;z-index:9999;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif">
+  <form onsubmit="checkAuth(event)" style="text-align:center;padding:24px">
+    <div style="font-size:32px;font-weight:700;color:#DC143C;margin-bottom:6px;letter-spacing:-0.02em">devx AI labs</div>
+    <div style="color:#888;font-size:11px;letter-spacing:0.2em;margin-bottom:36px">INVESTOR DECK · 2026 · CONFIDENTIAL</div>
+    <div><input id="auth-input" type="password" placeholder="Enter password" autofocus autocomplete="off" style="background:#0a0a0a;border:1px solid #2a2a2a;color:#fff;padding:14px 18px;font-size:14px;font-family:inherit;width:280px;outline:none;letter-spacing:0.04em"/></div>
+    <div id="auth-err" style="color:#DC143C;font-size:12px;margin-top:12px;min-height:16px;letter-spacing:0.02em"></div>
+    <button type="submit" style="background:#DC143C;color:#fff;border:none;padding:12px 36px;margin-top:8px;font-weight:700;font-size:12px;letter-spacing:0.1em;cursor:pointer;font-family:inherit">UNLOCK</button>
+  </form>
+</div>
+<script>
+(function(){
+  var gate = document.getElementById('auth-gate');
+  if (sessionStorage.getItem('devx-unlocked') === '1') { gate.remove(); return; }
+  window.checkAuth = function(e) {
+    e.preventDefault();
+    var v = document.getElementById('auth-input').value;
+    if (v === 'devxtothemoon') {
+      sessionStorage.setItem('devx-unlocked','1');
+      gate.remove();
+    } else {
+      document.getElementById('auth-err').textContent = 'Incorrect password';
+      document.getElementById('auth-input').value = '';
+    }
+  };
+})();
+</script>
+
 <nav>
   <div style="display:flex;align-items:center;gap:10px">
     <span class="brand">devx AI labs</span>
